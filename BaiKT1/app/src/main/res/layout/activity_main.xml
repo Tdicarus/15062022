@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+ >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN PAGE"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:textSize="25dp"
+                tools:ignore="HardcodedText,SpUsage"/>
+            <EditText
+                android:layout_marginStart="20dp"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:id="@+id/edtUserName"
+                tools:ignore="HardcodedText,SpUsage"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="PassWord"
+                android:textSize="25dp"
+                tools:ignore="HardcodedText,SpUsage"/>
+            <EditText
+                android:layout_marginStart="20dp"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:id="@+id/edtPass"
+                tools:ignore="HardcodedText,SpUsage"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="28dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:id="@+id/btnOK"
+            tools:ignore="HardcodedText,SpUsage"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attemps: "
+            android:textSize="28dp"
+            tools:ignore="HardcodedText,SpUsage" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="28dp"
+            android:id="@+id/attemps"
+            tools:ignore="HardcodedText,SpUsage" />
+    </LinearLayout>
+</LinearLayout>
